@@ -40,7 +40,7 @@ Skript v **Pythone**, ktorý sleduje **DNS požiadavky v AdGuardHome** a odosiel
 cd /opt
 git clone https://github.com/peterfromslovakia/Adguard-Discord-notifier.git
 cd Adguard-Discord-notifier
-2️⃣ Install dependencies / Inštalácia závislostí
+### 2️⃣ Install dependencies / Inštalácia závislostí
 
 pip3 install -r requirements.txt
 📑 Configuration / Konfigurácia
@@ -69,7 +69,7 @@ joj.sk
 
 python3 /opt/Adguard-Discord-notifier/adguard_discord_notifier.py
 
-🔄 Systemd Service (Auto-start) / Automatické spustenie cez systemd
+### 🔄 Systemd Service (Auto-start) / Automatické spustenie cez systemd
 
 Copy service file to systemd directory
 

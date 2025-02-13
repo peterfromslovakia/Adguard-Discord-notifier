@@ -1,0 +1,15 @@
+[Unit]
+Description=AdGuard Discord Notifier
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/adguard_discord_notifier.py
+Restart=always
+User=root
+WorkingDirectory=/opt
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=adguard_notifier
+
+[Install]
+WantedBy=multi-user.target

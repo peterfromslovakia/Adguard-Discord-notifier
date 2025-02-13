@@ -36,7 +36,7 @@ Skript v **Pythone**, ktorý sleduje **DNS požiadavky v AdGuardHome** a odosiel
 ## ⚙️ Installation / Inštalácia  
 
 ### 1️⃣ **Clone the repository / Klonovanie repozitára**  
-```bash
+
 cd /opt
 git clone https://github.com/peterfromslovakia/Adguard-Discord-notifier.git
 cd Adguard-Discord-notifier
@@ -45,14 +45,13 @@ cd Adguard-Discord-notifier
 pip3 install -r requirements.txt
 📑 Configuration / Konfigurácia
 🔗 Discord Webhook Setup
+   Open Discord → Server Settings > Integrations > Webhooks
+   Create a new webhook and copy the URL
+   Edit the script adguard_discord_notifier.py:
 
-    Open Discord → Server Settings > Integrations > Webhooks
-    Create a new webhook and copy the URL
-    Edit the script adguard_discord_notifier.py:
+   DISCORD_WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_HERE"
 
-    DISCORD_WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_HERE"
-
-    Save and exit
+   Save and exit
 
 📋 Watchlist (domains to monitor) / Zoznam sledovaných domén
 
@@ -72,7 +71,7 @@ python3 /opt/Adguard-Discord-notifier/adguard_discord_notifier.py
 
 🔄 Systemd Service (Auto-start) / Automatické spustenie cez systemd
 
-    Copy service file to systemd directory
+Copy service file to systemd directory
 
 cp /opt/Adguard-Discord-notifier/adguard_notifier.service /etc/systemd/system/
 
@@ -87,7 +86,7 @@ sudo systemctl start adguard_notifier
 
 Check status
 
-    sudo systemctl status adguard_notifier
+sudo systemctl status adguard_notifier
 
 📜 License / Licencia
 
